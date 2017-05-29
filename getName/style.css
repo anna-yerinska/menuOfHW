@@ -1,0 +1,41 @@
+body
+{
+    width: 100%;
+}
+
+.container
+{   
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn
+{
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.btn-getName
+{
+    height: 50px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: #5d6ffd;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.info,
+.show
+{
+    display: inline-block;
+}
+.info
+{
+    color: red;
+}
