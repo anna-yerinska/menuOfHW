@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
-    var btnGetName = document.querySelector('.btn-syncTime'),
+    var btnGetName = document.querySelector('.btn-getName'),
         studentList = [],
         studentListNew = [],
         studentListCompare = [],
@@ -39,16 +39,21 @@ function ready() {
                             if (name === nameNew) {
                                 let i = studentListNew.indexOf(nameNew);
                                 studentListNew.splice(i, 1);
-                            }  
+                            } 
+                            if (studentListNew.length === 0) {
+                                var info = document.querySelector('.info'),
+                                    li  = document.createElement('li');
+
+                                info.appendChild(li);
+                                li.innerHTML = 'Уникальные имена не найдены';
+                            } 
                         })
                     });                                     
                     for (let i = 0; i < studentListNew.length; i++) {
-                        if (i !== undefined) {
-                           var li = document.createElement('li');
+                        var li = document.createElement('li');
                                                                 
-                            show.appendChild(li);
-                            li.innerHTML = studentListNew[i]; 
-                        }       
+                        show.appendChild(li);
+                        li.innerHTML = studentListNew[i]; 
                     };
                 studentList = studentList.concat(studentListNew); 
                 } else {

@@ -4,21 +4,37 @@ body
 }
 
 .container
-{
-    width: 50%;
+{   
+    width: 90%;
     margin: 0 auto;
 }
 
-.show,
-.info,
 .btn
 {
-    display: inline-block;
     height: 50px;
     width: 300px;
+    margin: 0 auto;
     margin-top: 50px;
 }
+.btn-getName
+{
+    height: 50px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: #5d6ffd;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #fff;
 
+}
+
+.info,
+.show
+{
+    display: inline-block;
+}
 .info
 {
     color: red;
